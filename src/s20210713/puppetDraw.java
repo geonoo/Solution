@@ -1,4 +1,4 @@
-package solution20210713;
+package s20210713;
 import java.util.Stack;
 
 public class puppetDraw {

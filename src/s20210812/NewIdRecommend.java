@@ -3,11 +3,11 @@ package s20210812;
 public class NewIdRecommend {
 		
     public static void main(String[] args) {
-//    	¿¹1	"...!@BaT#*..y.abcdefghijklm"	"bat.y.abcdefghi"
-//    	¿¹2	"z-+.^."	"z--"
-//    	¿¹3	"=.="	"aaa"
-//    	¿¹4	"123_.def"	"123_.def"
-//    	¿¹5	"abcdefghijklmn.p"	"abcdefghijklmn"
+//    	ï¿½ï¿½1	"...!@BaT#*..y.abcdefghijklm"	"bat.y.abcdefghi"
+//    	ï¿½ï¿½2	"z-+.^."	"z--"
+//    	ï¿½ï¿½3	"=.="	"aaa"
+//    	ï¿½ï¿½4	"123_.def"	"123_.def"
+//    	ï¿½ï¿½5	"abcdefghijklmn.p"	"abcdefghijklmn"
     	System.out.println(solution("abcdefghijklmn.p"));
     	
     	//bat.y.abcdefghi
@@ -40,7 +40,7 @@ public class NewIdRecommend {
 			}
         }
         
-        //4 ÇÑ¹ø´õ
+        //4 í•œë²ˆë”
         if(new_id.charAt(0) == '.') new_id = new_id.substring(1,new_id.length());
     	if(new_id.length() > 0) if(new_id.charAt(new_id.length()-1) == '.') new_id = new_id.substring(0,new_id.length()-1);
     	

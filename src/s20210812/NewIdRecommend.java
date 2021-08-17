@@ -3,11 +3,11 @@ package s20210812;
 public class NewIdRecommend {
 		
     public static void main(String[] args) {
-//    	��1	"...!@BaT#*..y.abcdefghijklm"	"bat.y.abcdefghi"
-//    	��2	"z-+.^."	"z--"
-//    	��3	"=.="	"aaa"
-//    	��4	"123_.def"	"123_.def"
-//    	��5	"abcdefghijklmn.p"	"abcdefghijklmn"
+//    	1	"...!@BaT#*..y.abcdefghijklm"	"bat.y.abcdefghi"
+//    	2	"z-+.^."	"z--"
+//    	3	"=.="	"aaa"
+//    	4	"123_.def"	"123_.def"
+//    	5	"abcdefghijklmn.p"	"abcdefghijklmn"
     	System.out.println(solution("abcdefghijklmn.p"));
     	
     	//bat.y.abcdefghi

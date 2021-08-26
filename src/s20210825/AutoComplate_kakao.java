@@ -17,7 +17,7 @@ public class AutoComplate_kakao {
 		System.out.println(solution(words));
 		
 	}
-	
+	//자동정렬
 	static public int solution(String[] words) {
         int answer = 0;
         

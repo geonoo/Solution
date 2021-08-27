@@ -14,6 +14,7 @@ public class OpenChatRoom_kakao {
 		System.out.println((solution(record)));
 	}
 	
+	//챗팅방 로그 
 	static public ArrayList<String> solution(String[] record) {
 		ArrayList<String> answer = new ArrayList<>();
         ArrayList<String> temp = new ArrayList<String>();

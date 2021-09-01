@@ -1,6 +1,6 @@
 package s20210831;
 
-import java.util.Stack;
+import java.util.*;
 
 public class BracketConversion_kakao {
 	public static void main(String[] args) {
@@ -78,6 +78,4 @@ public class BracketConversion_kakao {
 		}
 		return true;
 	}
-	
-
 }

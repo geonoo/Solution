@@ -2,7 +2,7 @@ package s20210719;
 
 import java.util.ArrayList;
 
-//´Ù½ÃÇ®¾îº¸±â
+//ï¿½Ù½ï¿½Ç®ï¿½îº¸ï¿½ï¿½
 public class MakeDecimal {
 	
 	public static void main(String[] args) throws Exception {
@@ -14,7 +14,7 @@ public class MakeDecimal {
 		int[] nums = {1,2,7,6,4};
 			
 		
-		System.out.println("´ä : "+solution(nums) + "");
+		System.out.println("a : "+solution(nums) + "");
 		
 	}
 	

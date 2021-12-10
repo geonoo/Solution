@@ -1,4 +1,4 @@
-package One;
+package doit.one;
 
 public class Q15 {
 

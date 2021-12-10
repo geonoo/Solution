@@ -1,4 +1,4 @@
-package One;
+package doit.one;
 
 import java.util.*;
 

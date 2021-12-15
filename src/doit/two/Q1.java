@@ -25,7 +25,12 @@ public class Q1 {
 		Arrays.sort(height);
 		
 		System.out.println("최댓값은 : " + height[height.length-1]);
+		
 	}
 	
-
+	
+	static void swap(int[] a, int idx1, int idx2) {
+		int t = a[idx1]; a[idx1] = a[idx2];  a[idx2] = t;
+	}
+	
 }

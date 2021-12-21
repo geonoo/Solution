@@ -1,4 +1,4 @@
-package doit.two;
+package doit.b_two.one;
 
 import java.util.Arrays;
 import java.util.Scanner;

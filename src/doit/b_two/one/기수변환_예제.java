@@ -1,4 +1,4 @@
-package doit.two;
+package doit.b_two.one;
 
 public class 기수변환_예제 {
 

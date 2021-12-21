@@ -1,4 +1,4 @@
-package doit.two;
+package doit.b_two.one;
 
 public class Q2Q23 {
 	static int[] arr = {5, 10, 73, 2, -5, 42};

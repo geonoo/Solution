@@ -1,4 +1,4 @@
-package doit.one;
+package doit.a_one;
 
 import java.util.Arrays;
 import java.util.Collections;

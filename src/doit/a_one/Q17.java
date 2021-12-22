@@ -1,20 +1,20 @@
-package doit.one;
+package doit.a_one;
 
-public class Q16 {
+public class Q17 {
 
 	public static void main(String[] args) {
-		spira(4);
+		nspira(4);
 	}
 	
-	static void spira(int n) {
+	static void nspira(int n) {
 		for (int i = 1; i <=n; i++) {
 			String star = "";
 			String blank = "";
 			for (int j = 1; j <= i; j++) {
-				star += "*";
+				star += i;
 			}
 			for (int j = i; j > 1; j--) {
-				star += "*";
+				star += i;
 			}
 			for (int j = i; j < n+1; j++) {
 				blank += " ";
@@ -22,5 +22,4 @@ public class Q16 {
 			System.out.println(blank+star);
 		}
 	}
-
 }

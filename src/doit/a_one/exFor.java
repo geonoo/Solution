@@ -1,4 +1,4 @@
-package doit.one;
+package doit.a_one;
 
 import java.util.Scanner;
 

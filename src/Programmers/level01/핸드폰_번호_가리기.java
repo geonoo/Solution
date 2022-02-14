@@ -1,9 +1,9 @@
-package Programmers;
+package Programmers.level01;
 
-public class PhoneSplit {
+public class 핸드폰_번호_가리기 {
 		
     public static void main(String[] args) {
-    	System.out.println(solution("01093292136"));
+    	System.out.println(solution("01012345678"));
     }
     
     static public String solution(String phone_number) {

@@ -1,6 +1,6 @@
-package Programmers;
+package Programmers.level01;
 
-public class OddEven {
+public class 짝수와홀수 {
 		
     public static void main(String[] args) {
     	

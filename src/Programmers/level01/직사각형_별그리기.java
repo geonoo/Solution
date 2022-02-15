@@ -1,8 +1,8 @@
-package Programmers;
+package Programmers.level01;
 
 import java.util.Scanner;
 
-	public class RectangleStar {
+	public class 직사각형_별그리기 {
 		
 	    public static void main(String[] args) {
 	    	

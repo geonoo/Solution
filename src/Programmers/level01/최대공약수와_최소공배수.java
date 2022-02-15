@@ -1,6 +1,6 @@
-package Programmers;
+package Programmers.level01;
 
-public class MaxMin {
+public class 최대공약수와_최소공배수 {
 		
     public static void main(String[] args) {
     	
@@ -15,6 +15,7 @@ public class MaxMin {
         return answer;
     }
     
+    //최대공약수 
     static int gcd(int a, int b) {
 		 while(b!=0) {
 			 int r=a%b;
@@ -23,6 +24,8 @@ public class MaxMin {
 		 }
 		 return a;
 	 }
+    
+    //최소공배수 
 	 static int lcm(int a,int b) {
 		 return a*b/gcd(a,b);
 	 }

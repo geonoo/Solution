@@ -1,8 +1,8 @@
-package Programmers;
+package Programmers.level01;
 
-public class Average {
+public class 평균구하기 {
 		
-    public static void main(String[] args) {
+   public static void main(String[] args) {
     	int[] arr = {5,5};
     	System.out.println(solution(arr));
     }

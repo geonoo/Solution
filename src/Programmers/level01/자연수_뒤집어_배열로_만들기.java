@@ -1,6 +1,6 @@
-package Programmers;
+package Programmers.level01;
 
-public class NaturalNum {
+public class 자연수_뒤집어_배열로_만들기 {
 		
     public static void main(String[] args) {
     	int[] aa = solution(4561);
@@ -17,7 +17,6 @@ public class NaturalNum {
         
         return answer;
     }
-	    
 	    
 }
 	

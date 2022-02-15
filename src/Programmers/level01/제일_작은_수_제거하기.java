@@ -1,6 +1,6 @@
-package Programmers;
+package Programmers.level01;
 
-public class SmallNumRemove {
+public class 제일_작은_수_제거하기 {
 		
 	public static void main(String[] args) {
     	int[] arr = {10};

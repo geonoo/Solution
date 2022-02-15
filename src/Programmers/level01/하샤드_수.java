@@ -1,6 +1,6 @@
-package Programmers;
+package Programmers.level01;
 
-public class HashadNumber {
+public class 하샤드_수 {
 		
     public static void main(String[] args) {
     	System.out.println(solution(216));

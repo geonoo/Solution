@@ -2,9 +2,9 @@ package Programmers;
 
 import java.util.Arrays;
 
-public class MyHeartSort {
-	//��
-    public static void main(String[] args) {
+public class 문자열_내_마음대로_정렬하기 {
+	
+	public static void main(String[] args) {
     	//"abce", "abcd", "cdx"
     	//2
     	String[] aa = {"abce", "abcd", "cdx"};

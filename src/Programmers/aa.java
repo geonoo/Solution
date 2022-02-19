@@ -1,6 +1,6 @@
 package Programmers;
 
-public class NLaungching_kakao {
+public class aa {
 		
     public static void main(String[] args) {
 //    	2	4	2	1	"0111"

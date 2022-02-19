@@ -1,6 +1,6 @@
-package Programmers;
+package Programmers.level01;
 
-public class DotProduct {
+public class 내적 {
 		
     public static void main(String[] args) {
     	

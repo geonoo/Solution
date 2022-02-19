@@ -1,9 +1,9 @@
-package Programmers;
+package Programmers.level01;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class FindKth {
+public class K번쨰수 {
 	
 	public static void main(String[] args) throws Exception {
 		int[] array = {1, 5, 2, 6, 3, 7, 4};

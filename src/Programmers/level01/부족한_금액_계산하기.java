@@ -1,10 +1,11 @@
-package Programmers;
+package Programmers.level01;
 
-public class PriceMyMoney {
+public class 부족한_금액_계산하기 {
 		
     public static void main(String[] args) {
-    	//10
+    	
     	System.out.println(solution(3,20,4));
+    	
     }
     
     static public long solution(int price, int money, int count) {
@@ -19,4 +20,3 @@ public class PriceMyMoney {
 	    
 	    
 }
-	

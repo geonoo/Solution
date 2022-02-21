@@ -1,8 +1,8 @@
-package Programmers;
+package Programmers.level01;
 
 import java.util.Arrays;
 
-public class NotFinish {
+public class 완주하지못한선수 {
 	
 	public static void main(String[] args) throws Exception {
 		String[] participant = {"leo", "kiki", "eden"};

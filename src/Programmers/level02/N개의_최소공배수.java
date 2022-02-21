@@ -1,7 +1,7 @@
-package Programmers;
+package Programmers.level02;
 
 
-public class LCM_l2 {
+public class N개의_최소공배수 {
 		
     public static void main(String[] args) {
 //    	[2,6,8,14]	168

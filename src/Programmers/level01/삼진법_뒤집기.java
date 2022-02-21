@@ -1,6 +1,6 @@
-package Programmers;
+package Programmers.level01;
 
-public class ThreeToTen {
+public class 삼진법_뒤집기 {
 		
     public static void main(String[] args) {
     	//125 229
@@ -17,6 +17,7 @@ public class ThreeToTen {
         	n /= 3;
 		}
         
+        //String 역 순으로 뒤집기!
         a = new StringBuffer(a).reverse().toString();
         System.out.println(a);
         

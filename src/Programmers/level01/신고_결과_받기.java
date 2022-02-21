@@ -1,4 +1,4 @@
-package Programmers;
+package Programmers.level01;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class 배민_One {
+public class 신고_결과_받기 {
 	public static void main(String[] args) {
 		
 		String[] id_list = {"muzi", "frodo", "apeach", "neo"};

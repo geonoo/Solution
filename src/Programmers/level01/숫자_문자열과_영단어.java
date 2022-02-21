@@ -1,6 +1,6 @@
-package Programmers;
+package Programmers.level01;
 
-public class StringToNumber {
+public class 숫자_문자열과_영단어 {
 	
 	public static void main(String[] args) throws Exception {
 		String s = "one4seveneight";

@@ -1,8 +1,8 @@
-package Programmers;
+package Programmers.level01;
 
 import java.util.Arrays;
 
-public class GymSuit {
+public class 체육복 {
 	
 	public static void main(String[] args) throws Exception {
 
@@ -21,7 +21,7 @@ public class GymSuit {
 		int[] lost = {3};
 		int[] reserve = {1};
 		
-		System.out.println("�� : "+solution(n, lost, reserve));
+		System.out.println("값 : "+solution(n, lost, reserve));
 	}
 	
 	 public static int solution(int n, int[] lost, int[] reserve) {

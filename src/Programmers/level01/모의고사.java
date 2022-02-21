@@ -1,25 +1,15 @@
-package Programmers;
+package Programmers.level01;
 
 import java.util.Arrays;
 
-public class AnwserCheck {
+public class 모의고사 {
 	
 	public static void main(String[] args) throws Exception {
 		int[] anwsers = {1,2,3,4,5};
 		//int[] anwsers = {1,3,2,4,2};
-		
-//		1�� �����ڰ� ��� ���: 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, ...
-//		2�� �����ڰ� ��� ���: 2, 1, 2, 3, 2, 4, 2, 5, 2, 1, 2, 3, 2, 4, 2, 5, ...
-//		3�� �����ڰ� ��� ���: 3, 3, 1, 1, 2, 2, 4, 4, 5, 5, 3, 3, 1, 1, 2, 2, 4, 4, 5, 5, ...
-		
-		for(int i : solution(anwsers)) {
-			System.out.println(i);
-		}
-		
+		System.out.println(Arrays.toString(solution(anwsers)));
 		
 	}
-	
-	
 	
 	 public static int[] solution(int[] answers) {
 		 int[] student1 = {1, 2, 3, 4, 5};

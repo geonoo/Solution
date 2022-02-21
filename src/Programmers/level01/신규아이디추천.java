@@ -1,6 +1,6 @@
-package Programmers;
+package Programmers.level01;
 
-public class NewIdRecommend {
+public class 신규아이디추천 {
 		
     public static void main(String[] args) {
 //    	1	"...!@BaT#*..y.abcdefghijklm"	"bat.y.abcdefghi"
@@ -16,8 +16,6 @@ public class NewIdRecommend {
     }
     
     static public String solution(String new_id) {
-    	
-    	
     	//1
     	new_id = new_id.toLowerCase();
     	//2

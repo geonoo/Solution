@@ -1,6 +1,6 @@
-package Programmers;
+package Programmers.level01;
 
-public class Lotto {
+public class 로또의_최고_순위와_최저_순위 {
 	
 	public static void main(String[] args) throws Exception {
 		
@@ -16,8 +16,8 @@ public class Lotto {
 		int[] lottos = {45, 4, 35, 20, 3, 9};
 		int[] win_nums = {20, 9, 3, 45, 4, 35};
 		int[] aa = solution(lottos, win_nums);
-		System.out.println("�ְ� : "+aa[0]);
-		System.out.println("���� : "+aa[1]);
+		System.out.println("최고 : "+aa[0]);
+		System.out.println("최저 : "+aa[1]);
 		
 	}
 	

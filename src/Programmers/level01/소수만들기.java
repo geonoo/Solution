@@ -1,9 +1,8 @@
-package Programmers;
+package Programmers.level01;
 
 import java.util.ArrayList;
 
-//�ٽ�Ǯ���
-public class MakeDecimal {
+public class 소수만들기 {
 	
 	public static void main(String[] args) throws Exception {
 		

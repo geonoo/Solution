@@ -1,8 +1,8 @@
-package Programmers;
+package Programmers.level01;
 
 import java.util.ArrayList;
 
-public class Ponkemon {
+public class 폰켓몬 {
 	
 	public static void main(String[] args) throws Exception {
 		int[] nums = {3,3,3,2,2,4};

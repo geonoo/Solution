@@ -1,7 +1,7 @@
-package Programmers;
+package Programmers.level02;
 
 
-public class JadenCase_l2 {
+public class JadenCase_문자열_만들기 {
 		
     public static void main(String[] args) {
 //    	"3people unFollowed me"	"3people Unfollowed Me"

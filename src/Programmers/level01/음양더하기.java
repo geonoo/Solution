@@ -1,14 +1,12 @@
-package Programmers;
+package Programmers.level01;
 
-public class Absolutes {
+public class 음양더하기 {
 	
 	public static void main(String[] args) throws Exception {
 
-		//�� : 9
 //		int[] absolutes = {4,7,12};
 //		boolean[] signs = {true,false,true};
 		
-		//�� : 0
 		int[] absolutes = {1,2,3};
 		boolean[] signs = {false,false,true};
 		

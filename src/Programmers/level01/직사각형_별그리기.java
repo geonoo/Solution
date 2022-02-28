@@ -7,12 +7,12 @@ import java.util.Scanner;
 	    public static void main(String[] args) {
 	    	
 	        Scanner sc = new Scanner(System.in);
-	        int a = sc.nextInt();
-	        int b = sc.nextInt();
+	        int n = sc.nextInt();
+	        int m = sc.nextInt();
 	        
-	        for (int i=0; i<b; i++) {
+	        for (int i=0; i<n; i++) {
 	        	if(i!=0) System.out.println("");
-				for(int j=0;j<a; j++) {
+				for(int j=0;j<m; j++) {
 					System.out.print("*");
 				}
 			}

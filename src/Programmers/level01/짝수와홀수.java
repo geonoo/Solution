@@ -12,6 +12,5 @@ public class 짝수와홀수 {
         return num % 2 == 0 ? "Even" : "Odd";
     }
     
-    
 }
 	

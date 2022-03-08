@@ -15,7 +15,7 @@ public class 최대공약수와_최소공배수 {
         return answer;
     }
     
-    //최대공약수 
+    //최대공약수 Greatest Common Divisor, 시간 복잡도 : O(logN)
     static int gcd(int a, int b) {
 		 while(b!=0) {
 			 int r=a%b;
@@ -25,10 +25,18 @@ public class 최대공약수와_최소공배수 {
 		 return a;
 	 }
     
-    //최소공배수 
+    //최소공배수 Least Common Multiple
 	 static int lcm(int a,int b) {
 		 return a*b/gcd(a,b);
 	 }
-    
+
+	 //무차별 대입, 시간 복잡도 : O(n)
+	public static int gcd2(int a, int b) {
+		int answer = 0;
+		for(int i = 1; i <= b; i++) {
+			if(a % i == 0 && b % i == 0) answer = i;
+		}
+		return answer;
+	}
 }
 	

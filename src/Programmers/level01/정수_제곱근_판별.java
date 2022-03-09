@@ -14,6 +14,11 @@ public class 정수_제곱근_판별 {
         	return -1;
         }
     }
+
+   static public long solution(int n) {
+        double rtn = Math.sqrt(n);
+        return rtn % 1 == 0 ? (long)Math.pow(rtn+1, 2) : -1;
+   }
 	    
 	    
 }

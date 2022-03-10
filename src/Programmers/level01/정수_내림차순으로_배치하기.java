@@ -6,7 +6,7 @@ import java.util.Collections;
 public class 정수_내림차순으로_배치하기 {
 		
     public static void main(String[] args) {
-    	System.out.println(solution(118372));
+    	System.out.println(solution2(118372));
     }
     
     static public long solution(long n) {
@@ -20,7 +20,14 @@ public class 정수_내림차순으로_배치하기 {
         
         return Long.parseLong(temp);
     }
-	    
+
+    static public long solution2(int n) {
+
+        String[] str = (n+"").split("");
+        Arrays.sort(str, Collections.reverseOrder());
+
+        return Long.parseLong(String.join("",str));
+    }
 	    
 }
 	

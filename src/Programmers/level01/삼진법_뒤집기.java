@@ -5,7 +5,7 @@ public class 삼진법_뒤집기 {
     public static void main(String[] args) {
     	//125 229
     	//45  7
-    	System.out.println(solution(125));
+    	System.out.println(solution2(125));
     }
     
     static public int solution(int n) {
@@ -33,7 +33,24 @@ public class 삼진법_뒤집기 {
         
         return answer;
     }
-	    
+
+    static public int solution2(int n) {
+        int answer = 0;
+        StringBuilder sb = new StringBuilder();
+
+        while (n > 0){
+            sb.append(n % 3);
+            n /= 3;
+        }
+
+        int j = 1;
+        for (int i = sb.toString().length()-1; i >= 0; i--) {
+            answer += (sb.charAt(i) - '0')* j;
+            j *= 3;
+        }
+
+        return answer;
+    }
 	    
 }
 	

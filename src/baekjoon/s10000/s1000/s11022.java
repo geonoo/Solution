@@ -1,4 +1,4 @@
-package baekjoon;
+package baekjoon.s10000.s1000;
 
 import java.io.*;
 public class s11022 {

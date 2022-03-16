@@ -5,7 +5,7 @@ public class 소수찾기 {
     public static void main(String[] args) {
     	long beforeTime = System.currentTimeMillis(); 
         
-    	System.out.println("시작 : "+solution(10000000));
+    	System.out.println("시작 : "+solution2(10000000));
     	        
     	long afterTime = System.currentTimeMillis();
     	long secDiffTime = (afterTime - beforeTime);
@@ -37,6 +37,21 @@ public class 소수찾기 {
         }
         
         return answer;
+    }
+
+    // 4, 6, 8, 10 ... 배수를 제거
+    static public int solution2(int n) {
+        int anwser = 0;
+        boolean[] arr = new boolean[n+1];
+
+        for (int i = 2; i*i <= n ; i++)
+            if(!arr[i])
+                for (int j = i+i; j <= n ; j+=i) arr[j] = true;
+
+        for (int i = 2; i <= n ; i++)
+            if(!arr[i]) anwser++;
+
+        return anwser;
     }
 	    
 }

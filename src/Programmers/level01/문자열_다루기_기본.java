@@ -20,4 +20,12 @@ public class 문자열_다루기_기본 {
 		return s.length() == 6 || s.length() == 4 ? true : false;
 	}
 
+	static public boolean solution2(String s) {
+
+		if(s.matches("[0-9]+"))
+			return s.length() == 6 || s.length() == 4 ? true : false;
+
+		return false;
+	}
+
 }

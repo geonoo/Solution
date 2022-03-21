@@ -3,7 +3,7 @@ package Programmers.level01;
 public class 두_정수_사이의_합 {
 		
     public static void main(String[] args) {
-    	System.out.println(solution(3,5));
+    	System.out.println(solution3(3,3));
     }
     
     static public long solution(int a, int b) {
@@ -30,6 +30,13 @@ public class 두_정수_사이의_합 {
         }else{
             answer=a;
         }
+        return answer;
+    }
+
+    static public long solution3(int a, int b) {
+        long answer = 0;
+        for (int i = Math.min(a,b); i <= Math.max(a,b) ; i++)
+            answer += i;
         return answer;
     }
 	    

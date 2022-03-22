@@ -1,8 +1,8 @@
-package Programmers;
+package Programmers.level01;
 
 import java.util.*;
 
-public class DivideNumArr {
+public class 나누어떨어지는숫자배열 {
 		
     public static void main(String[] args) {
     	//[5, 9, 7, 10]	5	[5, 10]
@@ -55,6 +55,23 @@ public class DivideNumArr {
         
         return answer;
     }
+
+	static public int[] solution3(int[] arr, int divisor) {
+
+		String str = "";
+		for (int i = 0; i < arr.length; i++)
+			if(arr[i] % divisor == 0)
+				str += arr[i]+"|";
+
+		str = str.length() == 0 ? "-1" : str.substring(0, str.length()-1);
+		String[] rtn = str.split("\\|");
+		int[] answer = new int[rtn.length];
+
+		for (int i = 0; i < answer.length; i++)
+			answer[i] = Integer.parseInt(rtn[i]);
+
+		return answer;
+	}
 	    
 }
 	

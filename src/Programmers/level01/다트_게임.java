@@ -16,10 +16,45 @@ public class 다트_게임 {
 //    	5	1D#2S*3S	5	1이승 * (-1) * 2 + 2일승 * 2 + 3일승
 //    	6	1T2D3D#		-4	1삼승 + 2이승 + 3더블 * (-1)
 //    	7	1D2S3T*		59	1이승 + 2일승 * 2 + 3삼승 * 2
-    	System.out.println(solution("1D2S3T*"));
+    	System.out.println(solution2("1D#2S*3S"));
     	
     }
-    
+
+	static public int solution2(String dartResult) {
+		String[] s = dartResult.replaceAll("10", "Z").split("");
+		int[] temp = {-1004, -1004, -1004};
+		int tIdx = 0;
+		for (int i = 0; i < s.length; i++) {
+			if(s[i].equals("S")){
+				temp[tIdx] = (int) Math.pow(temp[tIdx], 1);
+			}else if(s[i].equals("D")){
+				temp[tIdx] = (int) Math.pow(temp[tIdx], 2);
+			}else if(s[i].equals("T")){
+				temp[tIdx] = (int) Math.pow(temp[tIdx], 3);
+			}else if(s[i].equals("*")){
+				temp[tIdx] = temp[tIdx]*2;
+				if(tIdx > 0) temp[tIdx-1] = temp[tIdx-1]*2;
+			}else if(s[i].equals("#")){
+				temp[tIdx] = temp[tIdx]*-1;
+			}else{
+				for (int j = 0; j < temp.length; j++) {
+					if(temp[j] == -1004){
+						tIdx = j;
+						temp[j] = s[i].equals("Z") ? 10 :Integer.parseInt(s[i]);
+						break;
+					}
+				}
+			}
+		}
+
+		int answer = 0;
+		for (int i = 0; i < temp.length; i++) {
+			answer += temp[i];
+		}
+
+		return answer;
+	}
+
     static public int solution(String dartResult) {
         int answer = 0;
         
@@ -71,7 +106,8 @@ public class 다트_게임 {
 			return false;
 		}
     }
-	    
-	    
+
+
+
 }
 	

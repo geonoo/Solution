@@ -1,4 +1,4 @@
-package baekjoon.s10000;
+package baekjoon.s10000.s1000;
 
 import java.util.Scanner;
 

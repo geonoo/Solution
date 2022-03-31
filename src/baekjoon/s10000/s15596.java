@@ -1,4 +1,4 @@
-package baekjoon;
+package baekjoon.s10000;
 
 public class s15596 {
     public long sum(int[] a){

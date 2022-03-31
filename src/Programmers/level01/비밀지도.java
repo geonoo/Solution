@@ -16,10 +16,39 @@ public class 비밀지도 {
     	int[] arr1 = {9, 20, 28, 18, 11};
     	int[] arr2 = {30, 1, 21, 17, 28};
 //    	solution(5, arr1, arr2);
-    	for (String s : solution(5, arr1, arr2)) {
+    	for (String s : solution3(5, arr1, arr2)) {
     		System.out.println(s);
 		}
-    }
+	}
+
+	static public String[] solution3(int n, int[] arr1, int[] arr2) {
+		String[] answer = new String[n];
+
+		String[] sArr1 = new String[n];
+		String[] sArr2 = new String[n];
+		for (int i = 0; i < n; i++) {
+			String a = Integer.toBinaryString(arr1[i]);
+			int lenA = n - a.length();;
+			for (int j = 0; j < lenA; j++)  a = "0"+a;
+			sArr1[i] = a;
+
+			String b = Integer.toBinaryString(arr2[i]);
+			int lenB = n - b.length();;
+			for (int j = 0; j < lenB; j++)  b = "0"+b;
+			sArr2[i] = b;
+		}
+
+		for (int i = 0; i < n; i++) {
+			String s = "";
+			for (int j = 0; j < n; j++) {
+				boolean check = sArr1[i].charAt(j) == '0' && sArr2[i].charAt(j) == '0';
+				s += check ? " " : "#";
+			}
+			answer[i] = s;
+		}
+
+		return answer;
+	}
     
     static public String[] solution(int n, int[] arr1, int[] arr2) {
     	String[] answer = new String[n];

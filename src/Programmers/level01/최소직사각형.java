@@ -9,9 +9,31 @@ public class 최소직사각형 {
 //		[[14, 4], [19, 6], [6, 16], [18, 7], [7, 11]]	
 		int[][] sizes = {{14, 4}, {19, 6}, {6, 16}, {18, 7}, {7, 11}};
 		
-		System.out.println(solution(sizes));
+		System.out.println(solution3(sizes));
 	}
-	
+
+    static public int solution3(int[][] sizes) {
+        for (int i = 0; i < sizes.length ; i++) {
+            if(sizes[i][0] < sizes[i][1]){
+                int temp = sizes[i][0];
+                sizes[i][0] = sizes[i][1];
+                sizes[i][1] = temp;
+            }
+        }
+
+        int max0 = 0;
+        int max1 = 0;
+        for (int i = 0; i < sizes.length ; i++) {
+            if(max0 < sizes[i][0])
+                max0 = sizes[i][0];
+
+            if(max1 < sizes[i][1])
+                max1 = sizes[i][1];
+        }
+
+        return max0*max1;
+    }
+
 	static public int solution(int[][] sizes) {
         
         for (int i = 0; i < sizes.length; i++) {

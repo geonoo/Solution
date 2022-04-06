@@ -2,6 +2,7 @@ package Programmers;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -12,10 +13,13 @@ public class Date2016 {
 		int a = 5;
 		int b = 24;
 		
-		System.out.println(solution(a, b));
+		System.out.println(solution2(a, b));
 		
 	}
-	
+
+	static String solution2(int a, int b) {
+		return LocalDate.of(2016, a, b).getDayOfWeek().toString().substring(0,3);
+	}
 	
 	static String solution(int a, int b) throws ParseException {
 		String m = a < 10 ? "0"+a : a+"";

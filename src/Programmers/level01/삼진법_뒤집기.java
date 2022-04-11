@@ -5,9 +5,35 @@ public class 삼진법_뒤집기 {
     public static void main(String[] args) {
     	//125 229
     	//45  7
-    	System.out.println(solution2(125));
+    	System.out.println(solution4(125));
     }
-    
+//45	1200	0021	7
+
+    static public int solution4(int n) {
+        String a = "";
+        while (n > 0){
+            a += n % 3;
+            n /= 3;
+        }
+        return Integer.parseInt(a, 3);
+    }
+
+    static public int solution3(int n) {
+
+        String a = "";
+        while (n > 0){
+            a += n % 3;
+            n /= 3;
+        }
+
+        int answer = 0;
+        for (int i=0; i < a.length(); i++) {
+            answer += (a.charAt(a.length()-1-i) - '0') * Math.pow(3, i);
+        }
+
+        return answer;
+    }
+
     static public int solution(int n) {
         int answer = 0;
         

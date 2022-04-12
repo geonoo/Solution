@@ -15,10 +15,21 @@ public class 약수의_개수와_덧셈 {
 		int right = 27;
 		
 		
-		System.out.println(solution(left, right));
+		System.out.println(solution2(left, right));
 		
 	}
-	
+
+	static public int solution2(int left, int right) {
+		int answer = 0;
+		for (int i = left; i <= right; i++) {
+			int cnt = 0;
+			for (int j = 1; j <= i; j++)
+				if(i % j == 0) cnt++;
+
+			answer = (cnt % 2 == 0) ? answer + i : answer - i;
+		}
+		return answer;
+	}
 	
 	 static public int solution(int left, int right) {
         int answer = 0;

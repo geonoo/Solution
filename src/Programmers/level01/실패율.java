@@ -8,12 +8,44 @@ public class 실패율 {
 //    	5	[2, 1, 2, 6, 2, 4, 3, 3]	[3,4,2,1,5]
 //		4	[4,4,4,4,4]	[4,1,2,3]
     	
-    	int[] stages = {1,2,3,2,2,1,3,2};
-    	System.out.println(Arrays.toString(solution(8, stages))); 
+    	int[] stages = {2, 1, 2, 6, 2, 4, 3, 3};
+    	System.out.println(Arrays.toString(solution2(5, stages)));
     }
     
     //N : 스테이지 개수
-    //stages : 현재 멈춰있는 스테이지를 담은 배열 
+    //stages : 현재 멈춰있는 스테이지를 담은 배열
+    static public int[] solution2(int N, int[] stages) {
+
+        Map<Integer, Double> map = new HashMap<>();
+        for (int i = 1; i <= N; i++) {
+            double total = 0;
+            double fail = 0;
+            for (int j = 0; j < stages.length; j++) {
+                if(i <= stages[j]) total++;
+                if(i == stages[j]) fail++;
+            }
+            if(total == 0 && fail == 0) total = 1;
+            map.put(i, fail/total);
+        }
+
+        int[] answer = new int[N];
+        for (int i = 0; i < N; i++) {
+            double max = -1;
+            int rKey = 0;
+            for (int key : map.keySet()){
+                if(max < map.get(key)){
+                    max = map.get(key);
+                    rKey = key;
+                }
+            }
+            answer[i] = rKey;
+            map.remove(rKey);
+        }
+
+        return answer;
+    }
+
+
     static public int[] solution(int N, int[] stages) {
     	
         int[] answer = new int[N];

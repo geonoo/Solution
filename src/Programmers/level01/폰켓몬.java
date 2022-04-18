@@ -1,6 +1,7 @@
 package Programmers.level01;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class 폰켓몬 {
 	
@@ -9,8 +10,16 @@ public class 폰켓몬 {
 		//int[] nums = {3,3,3,2,2,2};
 		//int[] nums = {3, 1, 2, 3};
 		
-		System.out.println("answer : " + solution(nums));
+		System.out.println("answer : " + solution2(nums));
 		
+	}
+
+	static public int solution2(int[] nums) {
+		HashSet<Integer> hs = new HashSet<>();
+		for (int i = 0; i < nums.length ; i++)
+			hs.add(nums[i]);
+
+		return nums.length / 2 < hs.size() ? nums.length/2 : hs.size();
 	}
 	
 	

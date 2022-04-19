@@ -1,6 +1,8 @@
 package Programmers.level01;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class 체육복 {
 	
@@ -23,7 +25,7 @@ public class 체육복 {
 		
 		System.out.println("값 : "+solution(n, lost, reserve));
 	}
-	
+
 	 public static int solution(int n, int[] lost, int[] reserve) {
 		 	int answer = n-lost.length;
 		 	
